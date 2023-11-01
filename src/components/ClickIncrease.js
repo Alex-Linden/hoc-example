@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import withCounter from "./withCounter";
 
 function ClickIncrease() {
   const [fontSize, setFontSize] = useState(10);
@@ -14,4 +15,4 @@ function ClickIncrease() {
   );
 }
 
-export default ClickIncrease;
+export default withCounter(ClickIncrease);
