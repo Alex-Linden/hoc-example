@@ -1,4 +1,5 @@
 import React from 'react';
+import withLogger from './withLogger';
 
 const TodoItem = ({ todo, onComplete }) => {
   return (
@@ -9,4 +10,4 @@ const TodoItem = ({ todo, onComplete }) => {
   );
 };
 
-export default TodoItem;
+export default withLogger(TodoItem);
